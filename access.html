@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">	
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ひつじ喫茶　ACCESS</title>
+
+	<link href="css/main-style.css" rel="stylesheet">
+<link href="css/reset-style.css" rel="stylesheet">
+	
+		
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+ 
+
+<script>
+//■page topボタン
+
+$(function(){
+var topBtn=$('#pageTop');
+topBtn.hide();
+
+ 
+
+//◇ボタンの表示設定
+$(window).scroll(function(){
+  if($(this).scrollTop()>80){
+
+    //---- 画面を80pxスクロールしたら、ボタンを表示する
+    topBtn.fadeIn();
+
+  }else{
+
+    //---- 画面が80pxより上なら、ボタンを表示しない
+    topBtn.fadeOut();
+
+  }
+});
+
+ 
+
+// ◇ボタンをクリックしたら、スクロールして上に戻る
+topBtn.click(function(){
+  $('body,html').animate({
+  scrollTop: 0},500);
+  return false;
+
+});
+
+
+});
+</script>	
+	
+	
+<p id="pageTop"><a href="#"><img src="img/modoru.png" height="70" width="70" alt="ページトップボタン"></a></p>
+	
+	
+	
+	<meta name="viewport" content="width=device-width">
+	
+
+
+</head>
+	
+	
+	
+	
+	
+	
+	
+<body>
+<div class="mocomoco">
+		<img src="img/mocomoco.png" alt="">
+		</div>	
+	
+	
+<header class="head">
+
+<h1><a href="index.html"><img src="img/title.svg" alt=""></a></h1>
+<nav class="main-nav">
+<ul>
+<li><a href="index.html">HOME</a></li>	
+<li><a href="concept.html">CONCEPT</a></li>
+<li><a href="menu.html">MENU</a></li>
+<li><a href="access.html">ACCESS</a></li>
+<li><a href="contact.html">CONTACT</a></li>
+</ul>
+</nav>
+	
+<nav class="sub-nav">
+	<p>SNS</p>
+	<div class="row">
+	
+	<a href="#"><img src="img/twitter.png" alt="ツイッター"></a>
+		<a href="#"><img src="img/insta.png" alt="インスタ"></a>
+		<a href="#"><img src="img/facebook.png" alt="facebook"></a>
+	</div>
+		
+</nav>
+</header>
+	
+	
+<!--ここからメイン	-->	
+		
+<div class="container">
+	<main>
+<h4>ACCESS</h4>
+
+	<div class="main-text">
+		<div class="row">	
+			
+	<section class="access_hitsuji_text">
+		<p>〒 370-3338</p>
+		
+	<p>群馬県高崎市宮沢町 3-9 メゾン宮沢町316</p><br>
+		<p>駐車場あります　収容台数25台</p>
+		<p>営業時間　10:00 ~ 14:00  , 
+15:00 ~ 20:30</p>
+		<p>定休日　     毎週 火曜日</p>
+		<p>TEL 0272-83-2352</p>
+			</section>
+
+<div class="access_hitsuji">
+		<img src="img/access.png" alt="">
+	</div>
+		
+			</div>
+		
+	<div class="chizu">	
+		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d51369.369766439704!2d138.86042392505684!3d36.41921998722474!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x601e881c48ee4b9f%3A0x17197a646696098!2z44CSMzcwLTMzMzgg576k6aas55yM6auY5bSO5biC5a6u5rKi55S6!5e0!3m2!1sja!2sjp!4v1607498029991!5m2!1sja!2sjp" width="600" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe></div>
+		
+		</div>
+	</main>
+	</div>
+	
+	
+	
+</body>
+</html>
+
+
+		<footer>		
+<p><small>&copy; 2020 sheep&amp;sleeping cafe</small></p>
+</footer>
